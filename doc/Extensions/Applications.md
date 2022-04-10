@@ -1373,7 +1373,7 @@ wget https://github.com/librenms/librenms-agent/raw/master/snmp/postfixdetailed 
 ```
 chmod +x /etc/snmp/postfixdetailed /etc/snmp/postfix-queues
 ```
-
+ 
 4. Edit your snmpd.conf file and add:
 ```
 extend mailq /etc/snmp/postfix-queues
@@ -1402,6 +1402,7 @@ Extend` heading top of page.
 > NOTE: If using RHEL for your postfix server, qshape must be
 > installed manually as it is not officially supported. CentOs 6 rpms
 > seem to work without issues.
+> Make sure that qshape is in the path of the user running snmpd.
 
 ## Postgres
 
